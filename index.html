@@ -10,7 +10,7 @@
     
     response = await pyfetch(url="https://catfact.ninja/fact", method="GET")
     test = await response.json()
-    message1 = """<p>Hier kommt ein Bild:</p> """
+    message1 = """<p>python kann auch HTML-Elemente machen</p> """
     print(message1)
     urltest=test['fact']
     print(urltest)
