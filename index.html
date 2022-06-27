@@ -1,18 +1,22 @@
-<html><link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" /><script defer src="https://pyscript.net/alpha/pyscript.js"></script><link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"><body>    
-<main class="container">      
-<h1>Hello, world! - Titel</h1>  
-<p>hello world - Paragraph bzw. Text </p>
-</main>    
+<html>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+<head>
+
+</head>
+    
+<body>    
+    <main class="container">      
+        <h1>Hello, world! - Titel</h1>  
+        <p>hello world - Paragraph bzw. Text </p>
+    </main>    
+
 <!-- Hier kommt nacher py-script hin -->
 <py-script> 
-    from pyodide.http import pyfetch
-    import asyncio
-    
-    response = await pyfetch(url="https://catfact.ninja/fact", method="GET")
-    test = await response.json()
     message1 = """<p>python kann auch HTML-Elemente machen</p> """
     print(message1)
-    urltest=test['fact']
-    print(urltest)
-    </py-script>
-</body> </html>
+</py-script>
+
+</body>
+</html>
